@@ -27,4 +27,10 @@ public class LoginService implements ILoginService{
     public void deleteLogin(LoginEntity loginEntity) {
         loginRepository.delete(loginEntity);
     }
+
+    @Override
+    public boolean autenticar(String usuario, String contrasena) {
+        LoginEntity login = loginRepository.findByUsuarioAndContrasena(usuario, contrasena);
+        return login != null;
+    }
 }
