@@ -7,4 +7,5 @@ public interface ILoginService {
     public LoginEntity findById(Integer idLogin);
     public void saveLogin(LoginEntity loginEntity);
     public void deleteLogin(LoginEntity loginEntity);
+    boolean autenticar(String nombreUsuario, String contrasena);
 }
