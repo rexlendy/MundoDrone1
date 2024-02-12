@@ -1,0 +1,10 @@
+@font-face {
+   font-family: 'Roboto';
+   src: url('../templates/fonts/Roboto-Bold.ttf') format('truetype');
+   font-weight: bold;
+}
+
+.label {
+  -fx-font-family: "Roboto";
+  -fx-font-weight: bold;
+}
