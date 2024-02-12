@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: CE2D4F;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="22.0" layoutY="42.0" text="MundoDrone" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="75.0" text="Bienvenido Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="407.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="11.0" layoutY="68.0" text="Iniciar sesion">
+               <font>
+                  <Font name="Roboto Light" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="134.0" prefHeight="19.0" prefWidth="156.0" text="username">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="81.0" layoutY="131.0" />
+            <Label layoutX="14.0" layoutY="180.0" prefHeight="19.0" prefWidth="156.0" text="password">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="81.0" layoutY="177.0" />
+            <Button layoutX="56.0" layoutY="233.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: CE2D4F;" text="Login" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
