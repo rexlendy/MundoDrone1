@@ -13,7 +13,7 @@ public class LoginEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idLogin;
     private String usuario;
-    private String contraseña;
+    private String contrasena;
     @ManyToOne
     @JoinColumn(name = "idUsuario")
     private UsuarioEntity idUsuario;
