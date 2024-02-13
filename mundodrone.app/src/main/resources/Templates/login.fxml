@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D5D8DE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sena.mundodrone.app.controller.LoginController">
+   <children>
+      <AnchorPane layoutY="6.0" prefHeight="590.0" prefWidth="997.0">
+         <children>
+            <Pane layoutX="-1.0" layoutY="-6.0" prefHeight="638.0" prefWidth="457.0" style="-fx-background-color: CE2D4F;" />
+            <ImageView fitHeight="638.0" fitWidth="457.0" layoutX="-5.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <ImageView fitHeight="581.0" fitWidth="948.0" layoutX="20.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/rectangle_lite.PNG" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginButton" layoutX="499.0" layoutY="436.0" mnemonicParsing="false" onAction="#iniciarSesion" styleClass="loginButton" stylesheets="@../Css/MundoDron.css" text="Login" />
+            <PasswordField fx:id="cajaContrasena" layoutX="499.0" layoutY="332.0" prefHeight="27.0" prefWidth="306.0" promptText="Contraceña" styleClass="textField" stylesheets="@../Css/MundoDron.css" />
+            <Label layoutX="499.0" layoutY="167.0" text="Nombre de usuario: ">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label layoutX="499.0" layoutY="282.0" text="Contraceña:">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label layoutX="499.0" layoutY="88.0" text="Inicia sesion en tu cuenta">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></Label>
+            <Button fx:id="ProveedorButton" layoutX="783.0" layoutY="383.0" mnemonicParsing="false" onAction="#abrirMenu" text="Proveedor" />
+            <ImageView fitHeight="441.0" fitWidth="392.0" layoutX="65.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/rectangle_gris.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="112.0" fitWidth="297.0" layoutX="69.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/drone.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="143.0" fitWidth="204.0" layoutX="230.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/car.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="204.0" fitWidth="165.0" layoutX="43.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/robot.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="81.0" layoutY="73.0" text="Mundo" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="184.0" layoutY="73.0" text="Drone" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="122.0" text="Bienvenido Usuario" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cajaUsuario" layoutX="499.0" layoutY="203.0" promptText="Usuario" styleClass="textField" stylesheets="@../Css/MundoDron.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
