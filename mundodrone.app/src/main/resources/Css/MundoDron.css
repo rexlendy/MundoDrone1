@@ -2,3 +2,45 @@
     Created on : 12 02, 24, 4:03:06 PM
     Author     : Hyuugo
 */
+
+/*
+    Created on : 12 02, 24, 4:03:06 PM
+    Author     : Hyuugo
+*/
+
+
+/* Estilo para el elemento textfield */
+.textField {
+    -fx-border-width: 1.5px;
+    -fx-pref-width: 306px;
+    -fx-pref-height: 5px;
+	-fx-font-size: 20px; /* Tamaño de fuente deseado */
+	-fx-border-color: #000000;
+	-fx-background-color: rgba(252, 253, 254, 1);
+	-fx-background-radius:10px;
+	-fx-border-radius: 10px;
+}
+
+.textfield:focused{
+    -fx-background-color:#fff;
+    -fx-border-width:1.8px;
+}
+
+
+/* Estilo para el elemento boton Login .loginButton */
+.loginButton {
+    -fx-background-color: #CE2D4F; /* Color de fondo */
+    -fx-text-fill: white; /* Color del texto */
+    -fx-font-size: 24px; /* Tamaño de fuente */
+    -fx-border-radius: 10px; /* Borde redondeado */
+	-fx-background-radius:10px;
+    -fx-pref-width: 306px; /* Ancho preferido */
+    -fx-pref-height: 50px; /* Altura preferida */
+	-fx-border-width:0px;
+}
+
+.button:hover {
+    -fx-background-color:  #357E8F; /* Color de fondo */
+	-fx-border-color: #357E8F; /* Cambia el color del borde al verde cuando el mouse está sobre el botón */
+    -fx-border-width: 2; /* Ajusta el ancho del borde */
+}
