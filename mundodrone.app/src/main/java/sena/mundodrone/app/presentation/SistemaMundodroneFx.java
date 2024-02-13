@@ -29,7 +29,7 @@ public class SistemaMundodroneFx extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        FXMLLoader loader = new FXMLLoader(MundodroneApplication.class.getResource("/Templates/index.fxml"));
+        FXMLLoader loader = new FXMLLoader(MundodroneApplication.class.getResource("/Templates/login.fxml"));
         loader.setControllerFactory(applicationContext::getBean);
         //En resumen, la línea de código loader.setControllerFactory(applicationContext::getBean)
         // está configurando un cargador de archivos FXML para que utilice el contenedor de Spring (applicationContext)
