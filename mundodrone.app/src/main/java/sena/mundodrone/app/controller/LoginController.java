@@ -19,10 +19,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 @Component
-public class IndexController implements Initializable {
+public class LoginController implements Initializable {
                                         //me fuerza a colocar la conversion (logger) explicitamente
     //private static final Logger logger = (Logger) new LoggerFactory().getLogger(IndexController.class);
-    private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
+    private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
     public Button ProveedorButton;
 
     @Autowired
