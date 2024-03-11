@@ -39,8 +39,77 @@
 	-fx-border-width:0px;
 }
 
+.button {
+    -fx-background-color: #CE2D4F; /* Color de fondo */
+	-fx-background-radius:10px;
+}
+
 .button:hover {
     -fx-background-color:  #357E8F; /* Color de fondo */
 	-fx-border-color: #357E8F; /* Cambia el color del borde al verde cuando el mouse está sobre el botón */
     -fx-border-width: 2; /* Ajusta el ancho del borde */
 }
+
+.button:pressed {
+    -fx-background-color: #CE2D4F; /* Color de fondo */
+	-fx-background-radius:10px;
+}
+
+/********************
+Tableview
+********************/
+/* Estilo básico de la tabla */
+.table-view{
+    -fx-background-color:transparent;
+    -fx-padding:0 0 2 0px;
+    -fx-border-color:lightgray;
+    -fx-border-width:2px;
+    -fx-border-radius:8px;
+}
+/* Alineación de contenido en la tabla */
+.table-view, .table-column{
+    -fx-alignment: CENTER;
+}
+/* Fondo de encabezado de columna */
+.table-view .column-header-background{
+    -fx-background-color:lightgray;
+    -fx-background-radius:8px 8px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+}
+/* Estilo de encabezado de columna y filtro */
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:40px;
+}
+
+/********************
+Table Columns
+********************/
+/* Estilo básico de las columnas de la tabla */
+.table-column {
+	-fx-border-color: transparent white transparent transparent;
+	-fx-padding: 10 15 10 15;
+}
+/* Interacción de las columnas de la tabla */
+.table-column:hover, .table-column:dragged {
+	-fx-border-color: transparent lightgray transparent transparent;
+}
+
+
+/********************
+Table Rows
+********************/
+/* Estilo de fila de tabla */
+
+.table-row {
+	-fx-background-color: transparent;
+}
+/* Resalta fila al pasar el mouse */
+.table-row:hover {
+	-fx-background-color: #F5F5F5;
+}
+/* Estilo de fila seleccionada */
+.table-row:selected {
+	-fx-background-color: #E1E1E1;
+}
+

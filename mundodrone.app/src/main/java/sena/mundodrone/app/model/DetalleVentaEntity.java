@@ -13,15 +13,10 @@ public class DetalleVentaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idDetalleVenta;
-    private Integer cantidad;
-    @Column(precision = 10, scale = 2)
-    private BigDecimal precioUnitario;
-    @Column(precision = 10, scale = 2)
-    private  BigDecimal descuento;
     @ManyToOne
     @JoinColumn(name = "idVenta")
-    private VentaEntity idVenta;
+    private VentaEntity Venta;
     @ManyToOne
-    @JoinColumn(name = "idProducto")
-    private ProductoEntity idUsuario;
+    @JoinColumn(name = "IdProducto")
+    private ProductoEntity producto;
 }

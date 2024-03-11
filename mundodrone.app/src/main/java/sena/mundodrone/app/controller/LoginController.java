@@ -85,5 +85,29 @@ public class LoginController implements Initializable {
     }
 
     public void abrirMenu(ActionEvent actionEvent) {
+        try {
+            logger.info("Ejecutando metodo Menu");
+
+            // Cargamos la vista de productos.fxml
+            Parent root = springFxmlLoader.load("Menu.fxml");
+
+            Stage stage = new Stage();
+            stage.setTitle("Menu Principal");
+
+
+            // nueva escena y la configuramos con la vista de Menu.fxml
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+
+            // Mostramos la ventana de Proveedor
+            stage.show();
+
+            // Cerramos la hp ventana actual (si es necesario)
+            // Obtenemos la ventana actual (inicio de sesión) y la cerramos
+            Stage loginStage = (Stage) loginButton.getScene().getWindow();
+            loginStage.close();
+        } catch (IOException e) {
+            e.printStackTrace(System.err);
+        }
     }
 }
