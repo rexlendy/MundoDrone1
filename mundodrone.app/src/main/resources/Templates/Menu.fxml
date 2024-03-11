@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="641.0" prefWidth="942.0" style="-fx-background-color: #D5D8DE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sena.mundodrone.app.controller.MenuController">
+   <children>
+      <HBox layoutX="192.0" layoutY="104.0" prefHeight="70.0" prefWidth="563.0" style="-fx-background-color: #D5D8DE; -fx-background-radius: 10 20 10 10;">
+         <children>
+            <Pane prefHeight="39.0" prefWidth="167.0" style="-fx-background-color: #FAFBFC; -fx-background-radius: 9 9 3 3;">
+               <children>
+                  <Label layoutX="65.0" layoutY="5.0" text="Clientes del día">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="clientesDelDiaLabel" layoutX="120.0" layoutY="31.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/vector.PNG" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="9.0" layoutY="61.0" stroke="WHITE" strokeType="INSIDE" width="167.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.1764705926179886" blue="0.30980393290519714" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.19172932330827067">
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.239215686917305" blue="0.37254902720451355" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.5285511074984759">
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.3019607961177826" blue="0.43529412150382996" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9285714285714284">
+                                 <color>
+                                    <Color red="0.8039215803146362" green="0.0470588244497776" blue="0.19607843458652496" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.8039215803146362" green="0.0470588244497776" blue="0.19607843458652496" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill></Rectangle>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="166.0" style="-fx-background-color: #FAFBFC; -fx-background-radius: 9 9 9 9;" translateX="20.0">
+               <children>
+                  <Label layoutX="64.0" layoutY="5.0" text="Ventas del día">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="ventasDelDiaLabel" layoutX="120.0" layoutY="29.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="9.0" layoutX="1.0" layoutY="61.0" stroke="WHITE" strokeType="INSIDE" width="164.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.1764705926179886" blue="0.30980393290519714" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.19172932330827067">
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.239215686917305" blue="0.37254902720451355" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.5285511074984759">
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.3019607961177826" blue="0.43529412150382996" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9285714285714284">
+                                 <color>
+                                    <Color red="0.8039215803146362" green="0.0470588244497776" blue="0.19607843458652496" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.8039215803146362" green="0.0470588244497776" blue="0.19607843458652496" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/vectorMoney.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="174.0" layoutY="10.0" prefHeight="70.0" prefWidth="178.0" style="-fx-background-color: #FAFBFC; -fx-background-radius: 9 9 9 9;" translateX="39.0">
+               <children>
+                  <Label layoutX="79.0" layoutY="5.0" text="Facturacion">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="facturacionDelDiaLabel" layoutX="61.0" layoutY="29.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="9.0" layoutX="2.0" layoutY="61.0" stroke="WHITE" strokeType="INSIDE" width="178.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.1764705926179886" blue="0.30980393290519714" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.19172932330827067">
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.239215686917305" blue="0.37254902720451355" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.5285511074984759">
+                                 <color>
+                                    <Color red="0.8078431487083435" green="0.3019607961177826" blue="0.43529412150382996" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9285714285714284">
+                                 <color>
+                                    <Color red="0.8039215803146362" green="0.0470588244497776" blue="0.19607843458652496" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.8039215803146362" green="0.0470588244497776" blue="0.19607843458652496" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <ImageView fitHeight="57.0" fitWidth="35.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/chart_2.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <ImageView fitHeight="650.0" fitWidth="173.0" layoutX="-6.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/MenuDash.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/Logo_3.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="62.0" layoutY="12.0" prefWidth="66.0" text="Mundo" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="62.0" layoutY="31.0" text="DRONE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <BorderPane layoutX="-6.0" layoutY="203.0" prefHeight="436.0" prefWidth="167.0">
+         <left>
+            <VBox prefHeight="436.0" prefWidth="162.0" stylesheets="@../Css/MundoDron.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnGestionClientes" cache="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirClientes" prefHeight="36.0" prefWidth="175.0" stylesheets="@../Css/MundoDron.css" text=" Cliente" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/LogoClientes.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="18.0" prefWidth="151.0" />
+                  <Button fx:id="btnGestionProductos" cache="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirProductos" prefHeight="36.0" prefWidth="195.0" stylesheets="@../Css/MundoDron.css" text=" Productos" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/LogoProductos.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Button>
+                  <Pane prefHeight="18.0" prefWidth="151.0" />
+                  <Button fx:id="btnGestionProveedor" cache="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirProveedor" prefHeight="36.0" prefWidth="229.0" stylesheets="@../Css/MundoDron.css" text=" Proveedores" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/Logoproveedores.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="18.0" prefWidth="151.0" />
+                  <Button fx:id="btnGestionVenta" cache="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirPuntoVenta" prefHeight="36.0" prefWidth="194.0" stylesheets="@../Css/MundoDron.css" text="  Venta" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/logoventas.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Button>
+                  <Pane prefHeight="18.0" prefWidth="151.0" />
+                  <Button cache="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="179.0" stylesheets="@../Css/MundoDron.css" text="Compras" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="436.0" prefWidth="570.0" stylesheets="@../Css/MundoDron.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Label layoutX="189.0" layoutY="20.0" stylesheets="@../Css/MundoDron.css" text="MENU PRINCIPAL">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Pane layoutX="217.0" layoutY="409.0" prefHeight="192.0" prefWidth="331.0" style="-fx-background-color: #FAFBFC; -fx-background-radius: 29 29 29 29;">
+         <children>
+            <Label layoutX="26.0" layoutY="8.0" text="Analisis de categoria mas vendida">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <PieChart fx:id="pieChartVentasPorCategoria" layoutX="-12.0" layoutY="25.0" prefHeight="156.0" prefWidth="176.0" />
+            <VBox fx:id="labelsContainer" layoutX="120.0" layoutY="42.0" prefHeight="156.0" prefWidth="206.0">
+               <children>
+                  <Label fx:id="labelCategoria1" alignment="CENTER" text="Label" translateX="35.0" translateY="5.0">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCategoria2" text="Label" translateX="35.0" translateY="5.0">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCategoria3" text="Label" translateX="35.0" translateY="5.0">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCategoria4" text="Label" translateX="35.0" translateY="5.0">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCategoria5" text="Label" translateX="35.0">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="784.0" layoutY="17.0" prefHeight="41.0" prefWidth="144.0" style="-fx-background-color: CE2D4F; -fx-background-radius: 9 9 9 9;" stylesheets="@../Css/MundoDron.css">
+         <children>
+            <Button layoutX="19.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" stylesheets="@../Css/MundoDron.css" text="Salir" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="46.0" layoutY="2.0" text="NombreUsuario" textFill="WHITE">
+               <font>
+                  <Font size="12.5" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="28.0" layoutX="16.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/exit.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+</AnchorPane>
